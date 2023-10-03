@@ -14,8 +14,71 @@
 *:after {
   box-sizing: border-box;
 }
+#iasis-vid{
+  width:640px;
+  height:277px;
+}
+#research-link{
+  display:flex; flex-direction: column; color: blue; margin: auto; max-width: 225px;
+}
+.service-card{
+  background-color: transparent; 
+  box-shadow: 0px 0px 5px grey;
+}
+#container-default, #container-default2, #container-default1{
+  max-width: 1140px;
+}
+#container-default2{
+  display: flex;
+  flex-direction: column;
+}
+.bio-text{
+  margin-top: 10px;
+}
+.collage{
+  display: flex;
+  flex-direction: row;
+}
 .primary-blue{
   color:rgb(0, 87, 158);
+}
+.p-content{
+  font-size: 15px;
+}
+
+.small-header{
+  font-size: 1.5rem;
+}
+.sm-white{
+  margin-bottom: 0;
+  /* font-weight: bold; */
+  font-size: 14px;
+  max-width:394px; 
+  color: white; 
+  text-shadow: 1px 1px 5px black;
+}
+.bio{
+  padding: 0 1.2rem;
+  font-size: 15px;
+
+}
+.bio-card{
+  padding: 20px;
+}
+.bio-card-div{
+  height: 616px;
+  background-color:#6363e5; 
+  display: flex; 
+  justify-content: center;
+  box-shadow: 0 0 10px black; 
+  border-radius:10px;
+}
+.bio-pic{
+  border:10px white solid;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px white;
+  max-width: 100%;
 }
 
 .card-pic{
@@ -37,7 +100,9 @@
   width: 100%;
 }
 .col {
+  /* display: flex; */
   flex: 1;
+  flex-direction: column;
   /* padding: 16px; */
 }
 
@@ -129,9 +194,198 @@ body {
   display: none;
 }
 
+.social-media {	margin: 0;padding: 0;	width: auto;}
+.social-media li {display: inline-block;padding: 0;}
+.social-media li a:hover {background-color:#ff8d1e;}
+.social-media li a {display: block;	height:30px;width: 30px;text-align: center;}
+.contact{
+  margin:3px;
+  text-shadow: 1px 1px blue;
+}
+.quickLinks{
+  list-style-type: none;
+  padding-left: 0;
+}
+.quickLinksDiv{
+  padding-right: 0;
+  padding-left: 0.45em;
+}
+.contact-info{
+  border: 1px solid #CCC;
+}
+
+.thumb-content{
+  margin-bottom: 5px;
+}
+
+.contactFooter{
+  font-size: .9em;
+}
+.contactFooter1{
+  font-size:14px;
+  margin-top: 1em;
+}
+
+
+@media (max-width: 1142px) {
+  /* .collage-services{ 
+    margin: 10px;
+  } */
+  .small-header{
+    font-size: 1.25rem;
+  }
+  .sub-small-header{
+    font-size: 1.15rem;
+  }
+
+
+}
+@media (max-width: 900px) {
+ #research-link{
+  display: none;
+ }
+
+
+}
+
+@media (min-width: 992px){
+  .container-default, #container-default2, #container-default1{
+    max-width: 1140px;
+  }
+
+}
+
+@media (min-width: 875px) and (max-width: 991px) {
+  .collage-services{
+    margin: 5px;
+  }
+  .small-header{
+    font-size: 1.3rem;
+  }
+  .collage{
+    align-items: center;
+    flex-direction: row;
+  }
+  .bio{
+    font-size: 14px;
+  }
+  .service-icon{
+    width: 125px;
+  }
+}
+@media (min-width: 830px) and (max-width: 876px) {
+  .collage-services{
+    margin: 5px;
+    /* width: 50%; */
+  }
+  .small-header{
+    font-size: 1.3rem;
+  }
+  .collage{
+    align-items: center;
+    flex-direction: column;
+  }
+  .service-icon{
+    width: 110px;
+  }
+}
+@media (min-width: 768px) and (max-width: 829px) {
+  .service-icon{
+    width: 100px;
+  }
+  .collage-services{
+    width: 50%;
+    margin: 5px;
+  }
+  .collage{
+    align-items: center;
+    flex-direction: column;
+  }
+  .small-header{
+    font-size: 1.15rem;
+  }
+  .sub-small-header{
+    font-size: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .service-icon{
+    width:100px;
+  }
+
+}
+
+@media (max-width: 575px){
+  .services-card{
+    flex-direction:column;
+  }
+  .service-icon{
+    width: 100px;
+  }
+}
+
+@media (max-width: 767px){
+  .service-card{
+    border:none;
+    box-shadow:none;
+  }
+  #s-card-1, #s-card-2, #s-card-3{
+    border:none;
+  }
+  .services-card{
+    height: auto;
+    padding: 2rem;
+    /* flex-direction: column; */
+  }
+  .collage{
+    flex-direction: row;
+  }
+  .primary-blue.small-header{
+    margin-top: 3rem;
+  }
+  .card-text{
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  #container-default, #container-default2,  #container-default1, #container-default3, #navbar{
+    width: 100%;
+    max-width: 100%;
+  }
+  .bio-card-div{
+    border-radius:0%;
+    box-shadow:none;
+  }
+  .bio-text{
+    margin-top: 2rem;
+  }
+
+  .p-content{
+    font-size: 14px;
+  }
+  
+  .col{
+    flex-direction: column;
+    align-items: center;
+  }
+  #iasis-vid{
+    margin-top:2rem;
+  }
+}
+
+
+
+
 @media (min-width: 600px) {
   .button span {
     display: initial;
+  }
+}
+@media (max-width: 575px) {
+  #about-tmc{
+    padding: 0 20px;
   }
 }
 
