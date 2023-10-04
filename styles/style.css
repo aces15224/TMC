@@ -226,6 +226,140 @@ body {
   margin-top: 1em;
 }
 
+.contact_links, .contact_links2{
+  text-decoration: none;
+}
+
+.contact_links2:hover{
+  color: rgb(179, 208, 248);
+}
+
+/* Pricing page */
+.round-hero{
+  height: auto;
+  width: 100%;
+  border-radius: 50%;
+  border: 7px solid white;
+  display: block;
+  margin: auto;
+  max-height: 340px;
+}
+#pricing-hero{
+  background-color: #6363e5;
+  padding-bottom: 3rem;
+  background-image: url("../images/family-fun-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-attachment: fixed; */
+  background-position: 50% 50%; 
+}
+
+.price-header-hero{
+  font-size: 2.1rem;
+  text-shadow: 1px 1px 5px black; 
+  font-weight: bold; 
+  color: white;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+td{     
+  font-weight: 600;
+  color: #605d5d;
+}
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+/* Contact Form */
+
+#contact{
+  margin-top: 2rem;
+  background-color: #dddcdc;
+  padding: 1rem;
+  border: 1px solid #6c6b6b;
+}
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea, #contact button[type="submit"], .checkbox-header { 
+  font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea, .form-checkbox-section{
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover,  #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:1px solid black;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+    background:yellow; 
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+.checkbox-header, .form-checkbox-section{
+  color: #888;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+
+::-webkit-input-placeholder {
+ color:#888;
+}
+
+:-moz-placeholder {
+ color:#888;
+}
+
+::-moz-placeholder {
+ color:#888;
+}
+
+:-ms-input-placeholder {
+ color:#888;
+}
+.form-check-label{
+  font-size: 15px;
+}
+._form-check{
+  display: inline-block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: .125rem;
+  padding: 5px 20px;
+}
 
 @media (max-width: 1142px) {
   /* .collage-services{ 
