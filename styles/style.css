@@ -278,8 +278,27 @@ td, th {
   padding: 8px;
 }  
 /* resources page */
+/* #resources-hero{
+
+} */
+
+#resource-header-div{
+  position: relative; 
+  display:flex; 
+  height:100%; 
+  align-items: center;
+}
+#resource-header{
+  font-size: 2rem;
+  position: relative; 
+  padding: 30px; 
+  z-index: 2;
+}
 .pic-resources{
   box-shadow: 0 0 5px grey;
+}
+#pic-no-shadow2{
+  max-height: 285px;
 }
 .p-resources{
   padding: 10px 30px;
@@ -406,7 +425,20 @@ td, th {
 
 }
 
+@media (min-width: 992px) and (max-width: 1054px) {
+  #resources-hero{
+    max-height: 285px;
+  }
+}
+
+
 @media (min-width: 875px) and (max-width: 991px) {
+  #resource-header{
+    font-size: 1.8rem;
+  }
+  #resources-hero{
+    max-height: 255px;
+  }
   .collage-services{
     margin: 5px;
   }
@@ -423,8 +455,23 @@ td, th {
   .service-icon{
     width: 125px;
   }
+  .p-resources{
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
 @media (min-width: 830px) and (max-width: 876px) {
+  #resources-hero{
+    max-height: 225px;
+  }
+  #resource-header{
+    font-size: 1.9rem;
+    padding: 10px;
+  }
+  .p-resources{
+    padding: 10px 20px;
+    font-size: 14px;
+  }
   .collage-services{
     margin: 5px;
     /* width: 50%; */
@@ -441,6 +488,17 @@ td, th {
   }
 }
 @media (min-width: 768px) and (max-width: 829px) {
+  #resources-hero{
+    max-height: 225px;
+  }
+  #resource-header{
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+  .p-resources{
+    padding: 10px 20px;
+    font-size: 14px;
+  }
   .service-icon{
     width: 100px;
   }
@@ -459,23 +517,89 @@ td, th {
     font-size: 1rem;
   }
 }
+@media (min-width: 601px) and (max-width: 767px) {
+  #resource-header-div{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #resource-header{
+    font-size: 1.8rem;
+    padding: 0 70px;
+  }
+  #resources-hero{
+    height: 230px;
+    position: relative;
+    right: -100px;
+    top: 20px;
+
+  }
+}
+@media (min-width: 551px) and (max-width: 600px) {
+  #resource-header-div{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #resource-header{
+    font-size: 1.8rem;
+    padding: 0 30px;
+  }
+  #resources-hero{
+    height: 210px;
+    position: relative;
+    top: 40px;
+    right: -70px;
+  }
+}
+
+
+
 @media (min-width: 576px) and (max-width: 767px) {
   .service-icon{
     width:100px;
   }
-
-}
-
-@media (max-width: 575px){
-  .services-card{
-    flex-direction:column;
-  }
-  .service-icon{
-    width: 100px;
+  .p-resources{
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }
 
+
+
+
+
+@media (max-width: 991px) {
+  #container-default, #container-default2,  #container-default1, #container-default3, #navbar{
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .bio-card-div{
+    border-radius:0%;
+    box-shadow:none;
+  }
+  .bio-text{
+    margin-top: 2rem;
+  }
+
+  .p-content{
+    font-size: 14px;
+  }
+  
+  .col{
+    flex-direction: column;
+    align-items: center;
+  }
+  #iasis-vid{
+    margin-top:2rem;
+  }
+}
 @media (max-width: 767px){
+  #pic-no-shadow, #pic-no-shadow2, .pic-resources{
+    max-height:275px;
+    margin-bottom: 2rem;
+  }
   .service-card{
     border:none;
     box-shadow:none;
@@ -498,35 +622,34 @@ td, th {
     font-size: 13px;
   }
 }
-
-
-@media (max-width: 991px) {
-  #container-default, #container-default2,  #container-default1, #container-default3, #navbar{
-    width: 100%;
-    max-width: 100%;
+@media (max-width: 575px){
+  .services-card{
+    flex-direction:column;
   }
-  .bio-card-div{
-    border-radius:0%;
-    box-shadow:none;
+  .service-icon{
+    width: 100px;
   }
-  .bio-text{
-    margin-top: 2rem;
-  }
-
-  .p-content{
-    font-size: 14px;
-  }
-  
-  .col{
-    flex-direction: column;
-    align-items: center;
-  }
-  #iasis-vid{
-    margin-top:2rem;
+  #about-tmc{
+    padding: 0 20px;
   }
 }
-
-
+@media (max-width: 550px){
+  #resource-header-div{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #resource-header{
+    font-size: 1.75rem;
+    padding: 0;
+  }
+  #resources-hero{
+    height: 200px;
+    position: relative;
+    top: 40px;
+    right: -35px;
+  }
+}
 
 
 @media (min-width: 600px) {
@@ -534,14 +657,12 @@ td, th {
     display: initial;
   }
 }
-@media (max-width: 575px) {
-  #about-tmc{
-    padding: 0 20px;
-  }
+/* @media (max-width: 575px) {
+  
 }
 
 .button--icon {
   min-width: initial;
   padding: 0.5rem;
-}
+} */
 
