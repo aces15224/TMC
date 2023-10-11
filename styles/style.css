@@ -325,7 +325,18 @@ td, th {
   display: block;
   margin: auto;
 }
+/* Brain health assessment */
+#brain-assessment-hero{
+  max-height: 100%;
+}
 
+/* Brainspotting page */
+
+.bsp-header-text{
+  padding: 20px; 
+  font-weight: 800; 
+  font-size: 1.7rem;
+}
 
 /* Contact Form */
 
@@ -454,6 +465,10 @@ td, th {
 
 
 @media (min-width: 875px) and (max-width: 991px) {
+  .bsp-header-text{
+    font-size: 1.5rem;
+    padding: 10px 20px 0 20px;
+  }
   #resource-header{
     font-size: 1.8rem;
   }
@@ -488,6 +503,10 @@ td, th {
   }
 }
 @media (min-width: 830px) and (max-width: 876px) {
+  .bsp-header-text{
+    font-size: 1.25rem;
+    padding: 10px 20px 0 20px;
+  }
   .round-hero{
     max-width:300px;
   }
@@ -521,6 +540,10 @@ td, th {
   }
 }
 @media (min-width: 768px) and (max-width: 829px) {
+  .bsp-header-text{
+    font-size: 1.25rem;
+    padding: 10px 20px 0 20px;
+  }
   .round-hero{
     max-width:300px;
   }
