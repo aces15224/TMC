@@ -326,8 +326,35 @@ td, th {
   margin: auto;
 }
 /* Brain health assessment */
+.benefits-card{
+  display: flex;
+  flex-direction: column;
+}
+.brain-health-icon{
+  max-height: 100%;
+  max-width: 100%;
+  height: 175px;
+  /* display: block;
+  margin:auto; */
+}
 #brain-assessment-hero{
   max-height: 100%;
+}
+#assessment-header-div{
+  position: relative; 
+  display:flex; 
+  height:100%; 
+  align-items: center;
+  justify-content: center;
+}
+#assessment-header-hero{
+  max-width: 500px; 
+  font-size: 2rem;
+  margin-left: 20px;
+}
+.assessment-hero-col{
+  background-color: #6363e5;
+  height: 450px;
 }
 
 /* Brainspotting page */
@@ -465,6 +492,9 @@ td, th {
 
 
 @media (min-width: 875px) and (max-width: 991px) {
+  #assessment-header-hero{
+    font-size: 1.75rem;
+  }
   .bsp-header-text{
     font-size: 1.5rem;
     padding: 10px 20px 0 20px;
@@ -503,6 +533,16 @@ td, th {
   }
 }
 @media (min-width: 830px) and (max-width: 876px) {
+  #brain-assessment-hero{
+    max-height: 350px;
+  }
+  .assessment-hero-col{
+    height: 100%;
+  }
+
+  #assessment-header-hero{
+    font-size: 1.65rem;
+  }
   .bsp-header-text{
     font-size: 1.25rem;
     padding: 10px 20px 0 20px;
@@ -540,6 +580,16 @@ td, th {
   }
 }
 @media (min-width: 768px) and (max-width: 829px) {
+  #brain-assessment-hero{
+    max-height: 350px;
+  }
+  .assessment-hero-col{
+    height: 100%;
+  }
+
+  #assessment-header-hero{
+    font-size: 1.5rem;
+  }
   .bsp-header-text{
     font-size: 1.25rem;
     padding: 10px 20px 0 20px;
@@ -581,6 +631,16 @@ td, th {
   }
 }
 @media (min-width: 601px) and (max-width: 767px) {
+  #brain-assessment-hero{
+    max-height: 300px;
+  }
+  .assessment-hero-col{
+    height: 100%;
+  }
+
+  #assessment-header-hero{
+    font-size: 1.3rem;
+  }
   .round-hero{
     max-width:250px;
   }
@@ -608,6 +668,16 @@ td, th {
   }
 }
 @media (min-width: 551px) and (max-width: 600px) {
+  #brain-assessment-hero{
+    max-height: 270px;
+  }
+  .assessment-hero-col{
+    height: 100%;
+  }
+
+  #assessment-header-hero{
+    font-size: 1.3rem;
+  }
   #resource-header-div{
     justify-content: center;
     align-items: center;
@@ -675,6 +745,13 @@ td, th {
   }
 }
 @media (max-width: 767px){
+  .benefits-card{
+    text-align: center;
+  }
+  .brain-health-icon{
+    margin: auto;
+    margin-bottom: 2rem;
+  }
   #pic-no-shadow, #pic-no-shadow2, .pic-resources{
     max-height:275px;
     margin-bottom: 2rem;
@@ -713,6 +790,16 @@ td, th {
   }
 }
 @media (max-width: 550px){
+  #brain-assessment-hero{
+    max-height: 250px;
+  }
+  .assessment-hero-col{
+    height: 100%;
+  }
+
+  #assessment-header-hero{
+    font-size: 1.15rem;
+  }
   #resource-header-div{
     justify-content: center;
     align-items: center;
