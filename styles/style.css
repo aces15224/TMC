@@ -326,6 +326,19 @@ td, th {
   margin: auto;
 }
 /* Brain health assessment */
+.tasks-ext{
+  display: block;
+}
+.tasks-reduced{
+  display: none;
+}
+.checkMark{
+  position: relative;
+  font-size: 40px;
+  top: -8px;
+  margin: 0 10px;
+  font-weight: 900;
+}
 .benefits-card{
   display: flex;
   flex-direction: column;
@@ -333,9 +346,9 @@ td, th {
 .brain-health-icon{
   max-height: 100%;
   max-width: 100%;
-  height: 175px;
-  /* display: block;
-  margin:auto; */
+  height: 300px;
+  margin: 0px 5rem;
+  color: #69befb;
 }
 #brain-assessment-hero{
   max-height: 100%;
@@ -466,7 +479,12 @@ td, th {
  #research-link{
   display: none;
  }
-
+ 
+  .tasks-ext{
+    display: none;
+  }
+  .tasks-reduced{
+    display: block;
 
 }
 
@@ -492,6 +510,9 @@ td, th {
 
 
 @media (min-width: 875px) and (max-width: 991px) {
+  .brain-health-icon{
+    margin: 0 2rem;
+  }
   #assessment-header-hero{
     font-size: 1.75rem;
   }
@@ -533,6 +554,9 @@ td, th {
   }
 }
 @media (min-width: 830px) and (max-width: 876px) {
+  .brain-health-icon{
+    margin: 1rem;
+  }
   #brain-assessment-hero{
     max-height: 350px;
   }
@@ -580,6 +604,12 @@ td, th {
   }
 }
 @media (min-width: 768px) and (max-width: 829px) {
+  .brain-health-icon{
+    display: none;
+  }
+  .brain-health-benefits{
+    margin:auto;
+  }
   #brain-assessment-hero{
     max-height: 350px;
   }
@@ -748,10 +778,10 @@ td, th {
   .benefits-card{
     text-align: center;
   }
-  .brain-health-icon{
+  /* .brain-health-icon{
     margin: auto;
     margin-bottom: 2rem;
-  }
+  } */
   #pic-no-shadow, #pic-no-shadow2, .pic-resources{
     max-height:275px;
     margin-bottom: 2rem;
