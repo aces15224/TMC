@@ -133,7 +133,7 @@
   color: #222;
 } */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-min.png");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -290,6 +290,8 @@ td, th {
   display:flex; 
   height:100%; 
   align-items: center;
+  margin: auto;
+  max-width: 1140px;
 }
 #resource-header{
   font-size: 2rem;
@@ -778,6 +780,12 @@ td, th {
   #container-default, #container-default2,  #container-default1, #container-default3, #navbar{
     width: 100%;
     max-width: 100%;
+  }
+  
+  #resource-header-div{
+    margin:0;
+    max-width: 100%;
+    width: 100%;
   }
   
   .bio-card-div{
