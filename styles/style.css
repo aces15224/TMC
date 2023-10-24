@@ -25,7 +25,7 @@
   background-color: transparent; 
   box-shadow: 0px 0px 5px grey;
 }
-#container-default, #container-default2, #container-default1{
+#container-default, #container-default2, #container-default1, #container-default3, #container-default4{
   max-width: 1140px;
 }
 #container-default2{
@@ -248,7 +248,7 @@ body {
 #pricing-hero{
   background-color: #6363e5;
   padding-bottom: 3rem;
-  background-image: url("../images/family-fun-hero.jpg");
+  background-image: url("../images/family-fun-hero-min.png");
   background-repeat: no-repeat;
   background-size: contain;
   /* background-attachment: fixed; */
@@ -266,13 +266,14 @@ body {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  max-width: 500px;
+  /* max-width: 500px; */
   width: 100%;
   margin: auto;
   margin-top: 2rem;
 }
 
 td{     
+  /* max-width: 400px; */
   font-weight: 600;
   color: #605d5d;
 }
@@ -506,7 +507,7 @@ td, th {
 }
 
 @media (min-width: 992px){
-  .container-default, #container-default2, #container-default1{
+  .container-default, #container-default2, #container-default1, #container-default3, #container-default4{
     max-width: 1140px;
   }
 
@@ -777,7 +778,7 @@ td, th {
 
 
 @media (max-width: 991px) {
-  #container-default, #container-default2,  #container-default1, #container-default3, #navbar{
+  #container-default, #container-default2,  #container-default1, #container-default3, #container-default4, #navbar{
     width: 100%;
     max-width: 100%;
   }
