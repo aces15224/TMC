@@ -97,7 +97,7 @@ html, body{
   margin: 5px;
   box-shadow: 0px 0px 3px #8b8a8a;
   float: left;
-  height: 175px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -364,6 +364,7 @@ td, th {
   max-height: 375px;
   border-radius: 50%;
 }
+
 #assessment-header-div{
   position: relative; 
   display:flex; 
