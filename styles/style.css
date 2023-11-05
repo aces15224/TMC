@@ -360,11 +360,13 @@ td, th {
   color: #69befb;
 }
 #brain-assessment-hero{
+  max-height: 100%;
+}
+#brain-coaching-hero{
   box-shadow: 1px 1px 30px #ed8be1;
   max-height: 375px;
   border-radius: 50%;
 }
-
 #assessment-header-div{
   position: relative; 
   display:flex; 
