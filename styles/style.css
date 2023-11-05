@@ -279,7 +279,7 @@ table {
 }
 
 td{     
-  /* max-width: 400px; */
+  max-width: 400px;
   font-weight: 600;
   color: #605d5d;
 }
@@ -360,7 +360,9 @@ td, th {
   color: #69befb;
 }
 #brain-assessment-hero{
-  max-height: 100%;
+  box-shadow: 1px 1px 30px #ed8be1;
+  max-height: 375px;
+  border-radius: 50%;
 }
 #assessment-header-div{
   position: relative; 
@@ -382,7 +384,7 @@ td, th {
 /* Brainspotting page */
 
 .bsp-header-text{
-  padding: 20px; 
+  padding: 0 20px; 
   font-weight: 800; 
   font-size: 1.7rem;
 }
