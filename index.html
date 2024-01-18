@@ -61,10 +61,10 @@
       </div>
       <nav class="navbar navbar-expand-lg">
         <div class="container" id="navbar">
-            <a class="navbar-brand" href="./index.html" class="brand" style="padding:15px;">
-                <img src="./images/logo-min.png" class="img-fluid" style="max-height: 200px;">
+            <a class="navbar-brand" href="./index.html" class="brand" id="nav-toggle">
+              <img src="./images/logo-min.png" id="nav-logo" class="img-fluid" alt="company logo">
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" id="nav-toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -97,9 +97,9 @@
         <div class="row">
           <div class="col-12">
             <div class="hero-image">
-              <div class="hero-text" style="color: white; max-width: 600px; position: absolute; top:50px; left: 50px;">
-                <h1 style="text-shadow: 0 0 5px #6363e5; font-weight: bold;">Mental Health = Brain Health</h1>
-                <p style="max-width: 450px; text-shadow: 0 0 3px black; color: #6363e5; font-weight: 900; font-size: 18px;">Approaching Mental Health with Natural Solutions for Brain Health and Healing</p>
+              <div class="hero-text">
+                <h1 id="home-header">Mental Health = Brain Health</h1>
+                <p id="home-subheader">Approaching Mental Health with Natural Solutions for Brain Health and Healing</p>
                 <a class="btn btn-primary" href="./contact.html">Learn More</a>
                 <!-- <button class="btn btn-primary">Learn More</button> -->
               </div>
@@ -149,7 +149,7 @@
             </div>
             <div class="row">
               <div class="collage p-0">
-                <img src="./images/regan-office.jpg" id="collage-no" style="object-fit: fill;" class="collage-services" alt="what we do here collage">
+                <img src="./images/regan-office-min.png" id="collage-no" style="object-fit: fill;" class="collage-services" alt="what we do here collage">
                 <img src="./images/collage3-min.png" class="collage-services" alt="what we do here collage">
               </div>
             </div>
@@ -173,7 +173,7 @@
                 number of treatments.            
               </p> 
             </div>
-            <img src="./images/side-butterfly.png" id="butterfly-no" > 
+            <img src="./images/side-butterfly-min.png" id="butterfly-no" > 
           </div>
         </div>
       </div>     
@@ -204,7 +204,7 @@
  -->
             </div>
           </div>
-          <div class="col-12 col-md-5 col" style="background-color:#6363e5; padding: 3rem; color:white; position: relative; ">
+          <div class="col-12 col-md-5 col" id="conditions-treated">
             <!-- <img src="./images/side-butterfly.png" style="position: absolute; height: 95px; position: absolute;top: -80px; right: -16px;">  -->
 
             <h2>Conditions Treated</h2>
@@ -237,7 +237,7 @@
         <div class="row default-row">
           <div class="offset-sm-1 col-sm-10 offset-md-1 col-md-10 offset-lg-0 col-lg-6">
             <div>
-              <h2>Safe. Natural. <span class="primary-blue" style="font-weight:bold;">Proven.</span></h2>
+              <h2>Safe. Natural. <span class="primary-blue boldTag">Proven.</span></h2>
               <p>
                 A recent study tested the outcomes of depression, anxiety, PTSD, and quality of life using Iasis 
                 microcurrent neurofeedback.  Over a period of 10 weeks, patients experienced positive and sustained
@@ -253,16 +253,16 @@
         </div>
         <div class="row default-row">
           <div class="offset-1 col-10">
-            <h5 class="primary-blue text-center" style="font-weight: bold;">Over 100,000 patients and counting have safely used the methodology with stunning results</h5>
+            <h5 class="primary-blue text-center boldTag">Over 100,000 patients and counting have safely used the methodology with stunning results</h5>
           </div>
         </div>
         <div class="row default-row">
           <div class="col-12">
             <div class="contact-card d-flex justify-center">
-              <img src="./images/featured-in-min.png" style="margin: auto; display: block;" alt="featured in => logo">
+              <img src="./images/featured-in-min.png" id="feature-tag" alt="featured in => logo">
               <div style="position: relative;">
-                <img src="./images/forward-butterfly.png" style="opacity: 0.9; right: -16px; position: absolute; height: 85px; transform: rotate(-25deg);">
-                <a href="https://virtualonlineeditions.com/publication/?m=11683&i=762983&p=1&ver=html5"><img src="./images/magazine-cover.png" style="margin: auto; display: block;" alt="magazine cover featuring TMC"></a>
+                <img src="./images/forward-butterfly-min.png" id="mag-butterfly">
+                <a href="https://virtualonlineeditions.com/publication/?m=11683&i=762983&p=1&ver=html5"><img src="./images/magazine-cover.png" id="mag-cover" style="margin: auto; display: block;" alt="magazine cover featuring TMC"></a>
               </div>
               <div id="research-link">
                 <p style="font-weight: bold; font-size: 13px;">Click to read the latest published research study supporting the efficacy of IASIS MicroCurrent Neurofeedback for depression, anxiety and PTSD:</p>
@@ -275,7 +275,7 @@
           <div class="order-1 order-md-1 offset-md-1 col-md-10 offset-lg-0 order-lg-0 col-lg-6" style="display:flex; justify-content: center; align-items: center; flex-direction: column;">
             
             <p class="bio bio-text">
-              <span style="font-weight: bold">Janelle Martin</span> is a married mother of two children from Magnolia, Texas. She has a Bachelor's degree in Biology and Chemistry from the University of Northern Iowa, and an Accounting degree from LoneStar College. She is a Licensed Chemical Dependency Counselor (LCDC) and currently working on her Masters degree in Clinical Mental Health Counseling at Lamar University, and certified in Brainspotting. Janelle has been actively involved in the recovery community in the Houston and Montgomery County areas since 2019. She facilitates weekly PAL (Parents of Addicted Loved Ones) meetings and sponsors other parents as part of her personal 12-step recovery program.
+              <span class="boldTag">Janelle Martin</span> is a married mother of two children from Magnolia, Texas. She has a Bachelor's degree in Biology and Chemistry from the University of Northern Iowa, and an Accounting degree from LoneStar College. She is a Licensed Chemical Dependency Counselor (LCDC) and currently working on her Masters degree in Clinical Mental Health Counseling at Lamar University, and certified in Brainspotting. Janelle has been actively involved in the recovery community in the Houston and Montgomery County areas since 2019. She facilitates weekly PAL (Parents of Addicted Loved Ones) meetings and sponsors other parents as part of her personal 12-step recovery program.
             </p>
             <p class="bio">
               Janelle was formally trained as an IASIS Certified Provider (ICP) in August, 2019. Through Janelle's extensive experience using IASIS MicroCurrent Neurofeedback, she has witnessed many incredible transformations in her clients, especially when conducted alongside traditional therapy. She strives to keep IASIS MCN available and affordable to anyone wanting to improve their quality of life.
@@ -292,7 +292,7 @@
             <div class="bio-card" style="position: relative; margin:auto;">
               <h2 style="font-weight: bold; color:white; text-shadow: 0 1px 5px black;">Meet Janelle</h2>
               <img src="./images/j_pic-min.png" class="bio-pic" alt="Janelle's Bio Pic">
-              <img src="./images/thumbnail-butterfly-transp-min.png" height="150px" width="150px" style="right: -71px; position: absolute; top: 352px;" alt="butterfly"> 
+              <img src="./images/thumbnail-butterfly-transp-min.png" class="profile-btfly" id="j_btfly" alt="butterfly"> 
               <p class="sm-white">Licensed Chemical Dependency Counselor (LCDC)</p> 
               <p class="sm-white" style="margin-bottom:0;">IASIS Certified Provider (ICP)</p>
               <p class="sm-white">Brainspotting Certified</p>
@@ -302,9 +302,9 @@
         </div>
       </div>
       <div class="container-fluid">
-        <div class="row" style="margin-top: 4rem; padding: 3rem; background-color: #dddcdc; border-top: 10px solid rgb(0, 87, 158); border-bottom: 10px solid rgb(0, 87, 158);">
+        <div class="row" id="brain-box">
           <div class="col-12 col-md-12 offset-lg-1 col-lg-10">
-              <div class="d-flex" id="certification-div" style="align-items: center;">
+              <div class="d-flex" id="certification-div">
                   <div>
                       <h2 style="font-weight: 900; color: rgb(0, 87, 158);">We're Certified Brain Health Professionals! </h2>
                       <p>
@@ -343,8 +343,8 @@
           <div class="col-md-12 col-lg-6 bio-card-div">
             <div class="bio-card" style="position: relative; margin:auto;">
               <h2 style="font-weight: bold; color:white; text-shadow: 0 1px 5px black;">Meet Regan</h2>
-              <img src="./images/r_pic.png" class="bio-pic" lt="Regan's Bio Pic">
-              <img src="./images/thumbnail-butterfly-transp-min.png" height="150px" width="150px" style="left: 314px; position: absolute; top: -98px; top: -1px; transform: rotate(-3deg);" alt="butterfly"> 
+              <img src="./images/r_pic-min.png" class="bio-pic" lt="Regan's Bio Pic">
+              <img src="./images/thumbnail-butterfly-transp-min.png" class="profile-btfly" id="r_btfly" alt="butterfly"> 
               <p class="sm-white">IASIS Certified Provider (ICP)</p>
               <p class="sm-white">Brainspotting Certified</p>
               <p class="sm-white">Dr. Amen Certified Brain Health Practitioner</p>
@@ -357,23 +357,23 @@
               Meet Regan
             </h2> -->
             <p class="bio bio-text">
-              <span style="font-weight: bold;">Regan Steinert</span> was born in Houston, Texas. Since the age of 3, she lived with her mother, stepfather and her older brother in Montgomery, TX. At the age of 17, she started her journey in recovery by getting sober at the Pathway Program, an alternative peer group (APG) in Arizona. Since being committed to her own recovery as a teenager, Regan has taken great strides in helping those in her community, and it has been her mission to share her story to help as many people she can. Regan has spoken on multiple podcasts such as ‘Let’s Talk Recovery Houston’, Mosaics of Mercy’s ‘Hope Pieced Together’, and Melissa Radke’s ‘Ordinary People, Ordinary Things’, as well as others.
+              <span class="boldTag">Regan Steinert</span> was born in Houston, Texas. Since the age of 3, she lived with her mother, stepfather and her older brother in Montgomery, TX. At the age of 17, she started her journey in recovery by getting sober at the Pathway Program, an alternative peer group (APG) in Arizona. Since being committed to her own recovery as a teenager, Regan has taken great strides in helping those in her community, and it has been her mission to share her story to help as many people she can. Regan has spoken on multiple podcasts such as ‘Let’s Talk Recovery Houston’, Mosaics of Mercy’s ‘Hope Pieced Together’, and Melissa Radke’s ‘Ordinary People, Ordinary Things’, as well as others.
             </p>
             <p class="bio">
               She became a certified Recovery Coach in 2019, has experience in rehabilitation detox centers, alternative peer groups, as well as recovery centers. She is also a Licensed Chemical Dependency Counselor Intern (LCDC-I), IASIS Certified Provider (ICP) of IASIS MicroCurrent Neurofeedback and trained in Brainspotting therapy. Her specialty is working with teens and young adults who are dealing with substance use issues themselves or have a loved one who is affected by substance use. She is simultaneously continuing her education toward her plan to become a Licensed Professional Counselor (LPC).
             </p>
-            <p class="primary-blue" style="padding: 0 1rem; font-weight:bold; text-align: center;">
+            <p class="primary-blue text-center" style="padding: 0 1rem; font-weight:bold;">
               Read more about Janelle and Regan:
             </p>
             <button class="btn btn-primary" style="display:block; margin: 0 auto;">Click Here</button>
           </div>
         </div>
       </div> 
-      <div class="container-fluid default-row" style="text-shadow: 1px 1px 5px black; font-weight: bold; color: white;">
+      <div class="container-fluid default-row book-now-box">
         <div class="row" style="background-color: #6363e5; padding: 45px 0;">
           <h5 class="text-center">We can help you make life better!</h5>
           <h1 class="text-center">Why wait? Book an appointment today!</h1>
-          <a class="btn btn-lg btn-light" href="./contact.html" style="display: block; max-width: 300px; margin: 10px auto; font-weight: bold; text-shadow: none;">Book Now</a>
+          <a class="btn btn-lg btn-light" href="./contact.html" id="book-now">Book Now</a>
         </div>
       </div>
     </main>
@@ -381,7 +381,7 @@
       <div class="container-fluid p-4 pb-0">
           <div class="row">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
-              <img src="./images/logo-min.png" style="max-width: 350px;" width="100%" alt="logo footer">
+              <img src="./images/logo-min.png" class="footer-logo" alt="logo footer">
             </div>
             <div class="order-2 offset-1 col-10 order-sm-2 offset-sm-3 col-sm-6 order-md-2 offset-md-0 col-md-3 col-lg-2 quickLinksDiv">
               <h5 class="footerText mb-4 font-weight-bold">Quick Links<span></span></h5>

@@ -1,4 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.boldTag{
+  font-weight:bold;
+}
+#nav-toggle{
+  padding: 15px;
+}
+#btfly-mcn{
+  height: 80px;
+  transform: rotate(-25deg);
+}
+#home-header{
+  text-shadow: 0 0 5px #6363e5; 
+  font-weight: bold;
+}
+#home-subheader{
+  max-width: 450px; 
+  text-shadow: 0 0 3px black; 
+  color: #6363e5; 
+  font-weight: 900; 
+  font-size: 18px;
+}
+#feature-tag, #mag-cover{
+  margin: auto; 
+  display: block;
+}
+#mag-butterfly{
+  opacity: 0.9;
+  right: -16px; 
+  position: absolute; 
+  height: 85px; 
+  transform: rotate(-25deg);
+}
+.profile-btfly{
+  height: 150px;
+  width: 150px;
+}
+#r_btfly{
+  left: 314px; 
+  position: absolute; 
+  top: -98px; 
+  top: -1px; 
+  transform: rotate(-3deg);
+}
+#j_btfly{
+  right: -71px; 
+  position: absolute; 
+  top: 352px;
+}
 .wrapper {
   /* max-width: 1140px; */
   /* max-width: 1300px; */
@@ -16,6 +65,36 @@ html, body{
 *:before,
 *:after {
   box-sizing: border-box;
+}
+#nav-logo{
+  max-height: 200px;
+}
+.footer-logo{
+  max-width: 350px;
+  width: 100%;
+}
+
+#book-now{
+  display: block; 
+  max-width: 300px; 
+  margin: 10px auto; 
+  font-weight: bold; 
+  text-shadow: none;
+}
+.book-now-box{
+  text-shadow: 1px 1px 5px black; 
+  font-weight: bold; 
+  color: white;
+}
+#brain-box{
+  margin-top: 4rem; 
+  padding: 3rem; 
+  background-color: #dddcdc; 
+  border-top: 10px solid rgb(0, 87, 158); 
+  border-bottom: 10px solid rgb(0, 87, 158);
+}
+#certification-div{
+  align-items: center;
 }
 #iasis-vid{
   width:640px;
@@ -124,10 +203,6 @@ html, body{
   align-items: center;
 }
 
-.services-card{
-  background-color: #dddcdc;
-}
-
 .service-icon{
   height: auto;
   width: 150px;
@@ -146,13 +221,28 @@ html, body{
   background-size: cover;
   position: relative;
 }
+.hero-text{
+  color: white; 
+  max-width: 600px; 
+  position: absolute; 
+  top:50px; 
+  left: 50px;
+}
+#conditions-treated{
+  background-color:#6363e5; 
+  padding: 3rem; 
+  color:white; 
+  position: relative;
+}
 .services-card{
   padding: 3rem;
+  background-color: #dddcdc;
   /* background-color: #c1bbbb;  */
   justify-content: space-around;
   width:100%;
   height: 100%;
 }
+
 .icon-text{
   margin:5px;
 }
@@ -292,8 +382,8 @@ td, th {
 
 } */
 #butterfly-no{
-  display: block;
-  opacity: 0.85;
+   display: block;
+    opacity: 0.85;
     height: 75px;
     margin: auto;
     transform: rotate(5deg);
@@ -611,6 +701,7 @@ td, th {
     padding: 0 30px;
   }
 }
+
 @media (min-width: 830px) and (max-width: 876px) {
   .brain-coaching-pics{
     max-width: 350px;
@@ -680,6 +771,7 @@ td, th {
   }
 
 }
+
 @media (min-width: 768px) and (max-width: 829px) {
   #collage-no{ display: none;}
   #butterfly-no{ 
@@ -757,6 +849,7 @@ td, th {
     font-size: 1rem;
   }
 }
+
 @media (min-width: 601px) and (max-width: 767px) {
   #butterfly-no{ 
     opacity: 0.85;
@@ -788,7 +881,8 @@ td, th {
     font-size: 1.3rem;
   }
   .round-hero{
-    max-width:250px;
+    max-width:225px;
+    margin-left:10px;
   }
   .price-header-hero{
     /* padding: 0 20px; */
@@ -852,6 +946,7 @@ td, th {
   }
   .round-hero{
     max-width:240px;
+    margin-left: 10px;
   }
   .price-header-hero{
     padding: 0;
@@ -933,6 +1028,7 @@ td, th {
   }
   #s-card-1, #s-card-2, #s-card-3{
     border:none;
+    background-color: transparent;
   }
   .services-card{
     height: auto;
@@ -961,27 +1057,62 @@ td, th {
   }
 }
 @media (max-width: 550px){
+  .brain-coaching-pics{
+    max-width: 300px;
+    max-height: 400px;
+    margin:2em auto;
+  }
   #certification-div{
     flex-direction: column;
   }
   #brain-assessment-hero{
     max-height: 250px;
+    position: relative;
+    right: -55px;
   }
   .assessment-hero-col{
     height: 100%;
   }
 
-  #assessment-header-hero{
+  /* #assessment-header-hero{
     font-size: 1.15rem;
-  }
+    padding-left:10px;
+  } */
   #resource-header-div{
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  
+  /* #resources-hero{
+    height: 200px;
+    position: relative;
+    top: 40px;
+    right: -35px;
+  } */
+  .round-hero{
+    max-width: 200px;
+    border: 4px white solid;
+    margin-left: 10px;
+  }
+  .price-header-hero{
+    font-size: 1rem;
+    padding:0;
+  }
+}
+@media (min-width: 500px)and (max-width: 550px){
+  #brain-coaching-hero{
+    max-height: 230px;
+  }
   #resource-header{
     font-size: 1.75rem;
     padding: 0;
+  }
+  #assessment-header-hero{
+    font-size: 1.15rem;
+    min-width: 220px;
+
+    /* margin-left: 0px; */
   }
   #resources-hero{
     height: 200px;
@@ -989,15 +1120,121 @@ td, th {
     top: 40px;
     right: -35px;
   }
-  .round-hero{
-    max-width: 220px;
-    border: 4px white solid;
+}
+@media (min-width: 400px) and (max-width: 500px){
+  #brain-coaching-hero{
+    max-height: 185px;
   }
-  .price-header-hero{
+  #resource-header{
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  #resources-hero{
+    height: 200px;
+    position: relative;
+    top: 40px;
+    /* right: -35px; */
+  }
+  #assessment-header-hero{
     font-size: 1rem;
-    padding:0;
+    margin-left: 50px;
+    min-width: 180px;
+
+  }
+  .contact_links, .contact_links2{
+    font-size: 14px;
+  }
+  #nav-logo{
+    max-height: 150px;
+  }
+  #navbar-toggler{
+    padding: 5px;
+  }
+  #nav-toggle{
+    margin-right: 0px;
+    padding: 10px 0;
+  }
+  #nav-toggle-btn{
+    padding: 5px;
   }
 }
+@media (max-width: 500px){
+  ._form-check{
+    padding: 5px;
+  }
+  #btfly-mcn{
+    height: 35px;
+  }
+  .hero-text{
+    left:inherit;
+    padding: 10px;
+  }
+  #home-header{
+    font-size: 1.75rem;
+  }
+  #home-subheader{
+    font-size: 16px;
+  }
+  #feature-tag{
+    width: 150px;
+  }
+  #mag-cover{
+    width: 250px;
+  }
+  #mag-butterfly{
+    height: 65px;
+  }
+  .profile-btfly{
+    height: 100px;
+    width: 100px;
+  }
+  #r_btfly{
+    left: 345px;
+    top: 22px;
+  } 
+   
+  #j_btfly{
+    right: -38px;
+    top: 385px;
+  }
+ 
+}
+@media (max-width: 400px){
+  #resource-header{
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  #resources-hero{
+    height: 170px;
+    position: relative;
+    /* top: 40px; */
+  }
+  .contact_links, .contact_links2{
+    font-size: 12px;
+  }
+  #nav-logo{
+    max-height: 130px;
+  }
+  #navbar-toggler{
+    padding: 5px;
+  }
+  #nav-toggle{
+    margin-right: 0px;
+    padding: 10px 0;
+  }
+  #nav-toggle-btn{
+    padding: 5px;
+  }
+  #brain-coaching-hero{
+    max-height: 170px;
+  }
+  #assessment-header-hero{
+    font-size: 1rem;
+    margin-left: 90px;
+    min-width: 177px;
+  }
+}
+
 
 
 @media (min-width: 600px) {

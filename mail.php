@@ -24,10 +24,8 @@
     \n PAIN: $cb4 \n ANGER: $cb5 \n CHRONIC FATIGUE: $cb6
     \n BRAIN INJURY: $cb7 \n DEPRESSION: $cb8 \n PTSD: $cb9
     \n BRAIN: $cb10 \n Fibromyalgia: $cb11 \n Performance Enhancement: $cb12
-    \n INSOMNIA: $cb13 \n MIGRAINE: $cb14 \n MEMORY ISSUES: $cb15"
-    ;
-    $recipient = "localreadymaid@gmail.com";
-
+    \n INSOMNIA: $cb13 \n MIGRAINE: $cb14 \n MEMORY ISSUES: $cb15";
+    $recipient = "Janelle.mindconnection@gmail.com";
     $subject = "Contact Form";
     $mailheader = "From: $email \r\n";
     mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
