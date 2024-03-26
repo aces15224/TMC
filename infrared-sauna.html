@@ -70,7 +70,17 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <!-- <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="./recommendations.html">Shop Supplements</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop Supplements
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./brain-md-products.html">BrainMD Supplements</a></li>
+                    <li><a class="dropdown-item" href="./earthley-wellness-products.html">Earthley Wellness Products</a></li>
+                    <li><a class="dropdown-item" href="./rowe-casa-products.html">Rowe Casa Products</a></li>
+                  </ul>
+                </li>
+
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
@@ -80,6 +90,7 @@
                     <li><a class="dropdown-item" href="./brain-coaching.html">Brain Health Coaching</a></li>
                     <li><a class="dropdown-item" href="./brain-health-assessment.html">Cognitive Brain Testing</a></li>
                     <li><a class="dropdown-item" href="./brainspotting.html">BSP/Counseling</a></li>
+                    <li><a class="dropdown-item" href="./infrared-sauna.html">Infrared Sauna</a></li>
                   </ul>
                 </li>       
                 <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>   
@@ -124,12 +135,10 @@
                         Benefits of using an Infrared Sauna
                     </h2>  
                   </div>
-                  
                     <p class="p-content mb-1 mt-1"><span style="font-weight:bold;">Sauna benefit #1: Removes chemicals and heavy metals from the body</span></p>
                     <p class="p-content">
                         The skin is the body’s largest organ, and sweating is a highly effective means of eliminating toxins. Research indicates that sauna use promotes the elimination of a variety of environmental toxins, including hormone-disrupting BPA, pesticides, and heavy metals. 
                     </p>
-
                     <p class="p-content mb-1 mt-1"><span style="font-weight:bold;">Sauna Benefit #2: Benefits the brain
                     </span></p>
                     <p class="p-content">
@@ -181,68 +190,40 @@
                 </div>
             </div>
             <div class="row default-row">
-                <!-- <div class="col-12 offset-sm-1 col-sm-10 offset-md-0 col-md-5 offset-lg-0 col-lg-6" style="background-image: url(./images/butterfly-bg-min.png); background-repeat: no-repeat; background-size: contain;">
-                  <div style="position: relative;">
-                    <img src="./images/sauna-tall-min.png" style="box-shadow: 0 0 5px grey; height: auto; max-height: 400px; display: block; max-width: 420px; margin: auto;" alt="Iasis therapy being performed">                   
-
-                  </div>
-                </div> -->
-                <div class="col-12 offset-sm-1 col-sm-10">
-                    <p class="bsp-header-text primary-blue pb-2 pt-0 text-center">
-                      Sauna Pricing
-                      <!-- ALL sauna sessions are 1 hour long and by appointment only -->
-                    </p>
-                    <div style="display: flex; justify-content: space-evenly;">
-                      <div class="card text-center" style="border: 1px solid grey; max-width: 400px; width: 33%;">
-                        <div class="card-header" style="padding: 20px; background-color: #6363e5; color: white">
-                          Single Session
-                        </div>
-                        <div style="padding: 20px">
-                          $40 / 60 minutes
-                        </div>
+              <div class="col-12 offset-sm-1 col-sm-10">
+                  <p class="bsp-header-text primary-blue pb-2 pt-0 text-center">
+                    Sauna Pricing
+                    <!-- ALL sauna sessions are 1 hour long and by appointment only -->
+                  </p>
+                  <div id="sauna-prices">
+                    <div class="card text-center sauna-card">
+                      <div class="card-header" style="padding: 20px; background-color: #6363e5; color: white">
+                        Single Session
                       </div>
-                      <div class="card text-center" style="border: 1px solid grey; max-width: 400px; width: 33%;">
-                        <div class="card-header" style="padding: 20px; background-color: #6363e5; color: white">
-                          5 Session Package                   
-                        </div>
-                        <div style="padding: 20px">
-                          $150 / 60 minutes each
-                        </div>
-                      </div>
-                      <div class="card text-center" style="border: 1px solid grey; max-width: 400px; width: 33%;">
-                        <div class="card-header" style="padding: 20px; background-color: #6363e5; color: white">
-                          10 Session Package                   
-                        </div>
-                        <div style="padding: 20px">
-                          $250 / 60 minutes each
-                        </div>
+                      <div style="padding: 20px">
+                        $40 / 60 minutes
                       </div>
                     </div>
-                    <p class="text-center pt-5" style="font-weight:bold">ALL sauna sessions are 1 hour long and by appointment only
-                    </p>
-                    
+                    <div class="card text-center sauna-card">
+                      <div class="card-header" style="padding: 20px; background-color: #6363e5; color: white">
+                        5 Session Package                   
+                      </div>
+                      <div style="padding: 20px">
+                        $150 / 60 minutes each
+                      </div>
+                    </div>
+                    <div class="card text-center sauna-card">
+                      <div class="card-header" style="padding: 20px; background-color: #6363e5; color: white">
+                        10 Session Package                   
+                      </div>
+                      <div style="padding: 20px">
+                        $250 / 60 minutes each
+                      </div>
+                    </div>
                   </div>
-                    
-                    <!-- <p class="p-content" style="padding:0 20px;">
-                        Single Session $40
-                    </p>
-                    <p class="p-content" style="padding:0 20px;">
-                      5-session package $150                  
-                    </p>
-                    <p class="p-content" style="padding:0 20px;">
-                      10 session package $250                    
-                    </p> -->
-                    <!-- <p class="p-content" style="padding-left: 20px; margin-bottom: 0; font-weight:600;">
-                        Want a more thorough understanding of your brain's health?
-                    </p>
-                    <p class="p-content" style="padding-left: 20px; margin-bottom: 0;">
-                        <a href="./brain-health-assessment.html">
-                            Click to learn about our Cognitive Brain Testing
-                       </a>
-                    </p> -->
-                    
-
-                </div>
+                  <p class="text-center pt-5" style="font-weight:bold">ALL sauna sessions are 1 hour long and by appointment only
+                  </p>
+              </div>
             </div>
         </div>
         <div class="container-fluid default-row book-now-box">
@@ -262,51 +243,52 @@
             </div>
             <div class="order-2 offset-1 col-10 order-sm-2 offset-sm-3 col-sm-6 order-md-2 offset-md-0 col-md-3 col-lg-2 quickLinksDiv">
               <h5 class="footerText mb-4 font-weight-bold">Quick Links<span></span></h5>
-                <ul class="quickLinks">
-                  <li>
-                      <div class="thumb-content"><a class="contactFooter" href="./index.html">Home</a></div>	
-                  </li>                  
-                  <li>
-                    <div class="thumb-content">
-                      <a class="contactFooter" href="./microcurrent-neurofeedback.html">MicroCurrent Neurofeedback</a>  
-                    </div>
-                  </li>
-                  <li>
-                    <div class="thumb-content">
-                      <a class="contactFooter" href="./brain-health-assessment.html">Cognitive Brain Testing</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="thumb-content">
-                      <a class="contactFooter" href="./brain-coaching.html">Brain Health Coaching</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="thumb-content">
-                      <a class="contactFooter" href="./brainspotting.html">BSP/Counseling</a>  
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <div class="thumb-content">
-                      <a class="contactFooter" href="./pricing.html">Pricing</a>  
-                    </div>
-                  </li>
-                  <!-- <li class="nav-item">
-                    <div class="thumb-content">
-                      <a class="contactFooter" href="./testimonials.html">Testimonials</a>
-                    </div>
-                  </li> -->
-                  <li class="nav-item">
-                    <div class="thumb-content">
-                      <a class="contactFooter" href="./resources.html">Resources</a>
-                    </div> 
-                  </li>
-                  <li class="nav-item">
-                    <div class="thumb-content">
-                      <a class="contactFooter" href="./contact.html">Contact Us</a>
-                    </div> 
-                  </li>
-                </ul>
+              <ul class="quickLinks">
+                <li>
+                    <div class="thumb-content"><a class="contactFooter" href="./index.html">Home</a></div>	
+                </li>                  
+                <li>
+                  <div class="thumb-content">
+                    <a class="contactFooter" href="./microcurrent-neurofeedback.html">MicroCurrent Neurofeedback</a>  
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a class="contactFooter" href="./brain-health-assessment.html">Cognitive Brain Testing</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a class="contactFooter" href="./brain-coaching.html">Brain Health Coaching</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a class="contactFooter" href="./brainspotting.html">BSP/Counseling</a>  
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a class="contactFooter" href="./infrared-sauna.html">Infrared Sauna</a>  
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="thumb-content">
+                    <a class="contactFooter" href="./pricing.html">Pricing</a>  
+                  </div>
+                </li>
+                
+                <li class="nav-item">
+                  <div class="thumb-content">
+                    <a class="contactFooter" href="./resources.html">Resources</a>
+                  </div> 
+                </li>
+                <li class="nav-item">
+                  <div class="thumb-content">
+                    <a class="contactFooter" href="./contact.html">Contact Us</a>
+                  </div> 
+                </li>
+              </ul>
             </div> 
               <div class="order-3 offset-1 col-10 order-sm-3 offset-sm-3 col-sm-6 offset-md-0 order-md-3 col-md-3 col-lg-3">
                 <h5 class="footerText mb-4 font-weight-bold">Contact</h5>
