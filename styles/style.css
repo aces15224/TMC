@@ -720,6 +720,12 @@ td, th {
 }
 
 @media (min-width: 830px) and (max-width: 876px) {
+  .benefits-header{
+    font-size: 1.15rem;
+  }
+  .benefits-subheader{
+    font-size: 14px;
+  }
   .brain-coaching-pics{
     max-width: 350px;
     max-height: 320px;
@@ -790,6 +796,12 @@ td, th {
 }
 
 @media (min-width: 768px) and (max-width: 829px) {
+  .benefits-header{
+    font-size: 1.15rem;
+  }
+  .benefits-subheader{
+    font-size: 14px;
+  }
   #collage-no{ display: none;}
   #butterfly-no{ 
     opacity: 0.85;
@@ -1059,7 +1071,10 @@ td, th {
   .services-card{
     height: auto;
     padding: 2rem;
-    /* flex-direction: column; */
+    flex-direction: column;
+  }
+  .services-card-2{
+    flex-direction: column;
   }
   .collage{
     flex-direction: row;
